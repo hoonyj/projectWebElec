@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<!-- //web-fonts -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	
+
 </head>
 <body>
 		<!--header-->
@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h1>Tumblr</h1>
 		</div>
 		<!--//header-->
-		
+
 		<!--main-->
 		<div class="content">
 		<div class="main-content-agile">
@@ -48,22 +48,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li>We will send you weekly updates</li>
 				<li>Get daily articles and latest news</li>
 			</div>
-			<div class="sub-main-w3">	
-				<form action="#" method="post">
-					
-					<input placeholder="Username" name="userName" type="text" required="">
+			<div class="sub-main-w3">
+				<form action="controller/loginProcess.php" method="post">
+
+					<input placeholder="Email" name="email" type="email" required="">
 					<input placeholder="Password" name="password" type="password" required="">
-					
+
 					<input type="submit" value="Login">
 				</form>
 			</div>
 		</div>
 		</div>
 		<!--//main-->
-		
+
 		<!--footer-->
 		<div class="footer">
-			
+
 		</div>
 		<!--//footer-->
 

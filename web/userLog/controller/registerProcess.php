@@ -1,6 +1,4 @@
 <html>
-
-
 <head>
     <title>Add Data</title>
 </head>
@@ -40,15 +38,5 @@ include_once("config.php");
 // }
 ?>
 
-<?php
-$query = $db->users->find();
-
-echo '<pre>';
-
-foreach ( $query as $current )
-    print_r($current);
-
-echo '</pre>';
-?>
 </body>
 </html>
