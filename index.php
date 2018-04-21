@@ -1,11 +1,11 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
+
+<?php
+$connection = new MongoClient( "mongodb://localhost" );
+$db = $connection->project_sql;
+?>
+
 <head>
 <title>main</title>
  <!-- Meta-Tags -->
@@ -13,6 +13,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta charset="utf-8">
     <meta name="keywords" content="Elegant Subscribe Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -135,7 +139,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 	</style>
-	
+
 </head>
 <body>
 		<!--header-->
@@ -143,36 +147,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h1></h1>
 		</div>
 		<!--//header-->
-		
+
 		<!--main-->
 		<div class="content">
-		
+
 			<div class="wthree-pro">
 				<h2></h2>
 				<h3>Welcome to <span>Tumblr</span> updates</h3>
 				<li>We will send you weekly updates</li>
 				<li>Get daily articles and latest news</li>
 			</div>
-			
-			<p><a href="#" class="button">  Login!</a> </p>
-			<p><a href="#" class="button">Register!</a></p>
+
+			<p><a href="web/userLog/login.php" class="button">  Login!</a> </p>
+			<p><a href="web/userLog/register.php" class="button">Register!</a></p>
 
 		</div>
 		<!--//main-->
-		
+
 		<!--footer-->
 		<div class="footer">
-			
+
 		</div>
 		<!--//footer-->
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-</body>
-</html>
-
-
-
-</body>
+	</body>
 </html>

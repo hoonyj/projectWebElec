@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<!-- //web-fonts -->
-	
+
 </head>
 <body>
 		<!--header-->
@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h1>tumblr</h1>
 		</div>
 		<!--//header-->
-		
+
 		<!--main-->
 		<div class="content">
 		<div class="main-content-agile">
@@ -48,23 +48,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li>We will send you weekly updates</li>
 				<li>Get daily articles and latest news</li>
 			</div>
-			<div class="sub-main-w3">	
-				<form action="#" method="post">
-					<input placeholder="Full Name" name="name" type="text" required="">
-					<input placeholder="E-mail" name="mail" type="email" required="">
+			<div class="sub-main-w3">
+
+				<form action="controller/registerProcess.php" method="post">
+					<input placeholder="Last Name" name="lastName" type="text" required="">
+  					<input placeholder="First Name" name="firstName" type="text" required="">
+					<input placeholder="E-mail" name="eMail" type="email" required="">
 					<input placeholder="Username" name="userName" type="text" required="">
 					<input placeholder="Password" name="password" type="password" required="">
-					
-					<input type="submit" value="Register">
+
+					<input type="submit" name="Submit" value="Register">
 				</form>
 			</div>
 		</div>
 		</div>
 		<!--//main-->
-		
+
 		<!--footer-->
 		<div class="footer">
-			
+
 		</div>
 		<!--//footer-->
 
