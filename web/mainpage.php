@@ -1,18 +1,10 @@
-<<<<<<< HEAD:web/mainpage.php
 <!DOCTYPE html>
 <html lang="en">
-<?php
-$connection = new MongoClient( "mongodb://localhost" );
-$db = $connection->project_sql;
-?>
-
-=======
-<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
->>>>>>> jamiepretty:web/mainpage.html
+
 
 <head>
 <meta charset="utf-8">
@@ -29,19 +21,25 @@ $db = $connection->project_sql;
 
 <body>
 
-<<<<<<< HEAD:web/mainpage.php
 <?php
-$query = $db->users->find();
+// $query = $db->users->find();
+//
+// echo '<pre>';
+//
+// foreach ( $query as $current )
+//     print_r($current);
+//
+// echo '</pre>';
 
-echo '<pre>';
-
-foreach ( $query as $current )
-    print_r($current);
-
-echo '</pre>';
+session_start();
+    require_once('userLog/controller/config.php');
+    if(empty($_SESSION['email'])){
+      echo "<script>
+      window.location.href='../index.php';
+      </script>";
+        exit;}
 ?>
-Main pages(can only see when the user log-in from index.html)
-=======
+
 <!-- Header Section -->
 <section class="tophead" role="tophead">
   <!-- Navigation Section -->
@@ -53,7 +51,7 @@ Main pages(can only see when the user log-in from index.html)
           <li><a href="#services">Our Services</a></li>
           <li><a href="#portfolio">Our Portfolio</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#logout">Logout</a></li>
+          <li><a href="userLog/logout.php">Logout</a></li>
         </ul>
       </nav>
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
@@ -226,7 +224,6 @@ Main pages(can only see when the user log-in from index.html)
   </div>
 </section>
 <!-- Testimonials section -->
->>>>>>> jamiepretty:web/mainpage.html
 
 <!-- footer section -->
 <footer id="contact" class="footer">
