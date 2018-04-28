@@ -17,6 +17,16 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/uploadSection.css">
+<link rel="stylesheet" href="css/photoUpload.css">
+<link rel="stylesheet" href="css/textUpload.css">
+
+
+
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -59,15 +69,22 @@ session_start();
   <!-- Navigation Section -->
 </section>
 <!-- Header Section -->
-<!-- Slider Section -->
+
+
+
+<!-- Upload Section -->
+
+<!-- Upload Section -->
+
+<!-- Slider Section
 <section id="header-slider" class="section">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    <! Indicators
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
     </ol>
-    <!-- Wrapper for slides -->
+    <! Wrapper for slides
     <div class="carousel-inner" role="listbox">
       <div class="item active"> <img src="images/slider/slid1.jpg" alt="Chania">
         <div class="carousel-caption">
@@ -82,10 +99,13 @@ session_start();
         </div>
       </div>
     </div>
-    <!-- Controls -->
+    <!Controls
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span></a></div>
 </section>
-<!-- Slider Section -->
+<!Slider Section -->
+
+
+
 <!-- Service Section -->
 <section id="services" class="section services">
   <div class="container-fluid">
@@ -261,5 +281,13 @@ session_start();
 <script src="js/retina.min.js"></script>
 <script src="js/modernizr.js"></script>
 <script src="js/main.js"></script>
+
+<script src="js/uploadSection.js"></script>
+<script src="js/textUpload.js"></script>
+<script src="js/photoUpload.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
 </body>
 </html>
