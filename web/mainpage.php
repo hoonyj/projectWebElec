@@ -59,15 +59,53 @@ session_start();
   <!-- Navigation Section -->
 </section>
 <!-- Header Section -->
-<!-- Slider Section -->
+
+<!-- Upload Section -->
+<div class="section" style="width: 640px;  margin-bottom: 100px; margin-left: 40.469px;background-color:#f2f2f2;">
+  <div class="col-sm-12" style="">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">TEXT</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">PHOTO</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">LINK</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+<input class="form-control" type="text" placeholder="Title">
+<input class="form-control" type="text" placeholder="#Tags">
+<div class="form-group">
+   <label for="exampleFormControlTextarea1"> textarea</label>
+   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+   <button type="button" class="btn btn-success">Success</button>
+ </div>
+
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+<input class="form-control" type="text" placeholder="lINK">
+   <button type="button" class="btn btn-success">Success</button>
+ </div>
+</div>
+  </div>
+</div>
+
+<!-- Upload Section -->
+
+<!-- Slider Section
 <section id="header-slider" class="section">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    < Indicators
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
     </ol>
-    <!-- Wrapper for slides -->
+    < Wrapper for slides
     <div class="carousel-inner" role="listbox">
       <div class="item active"> <img src="images/slider/slid1.jpg" alt="Chania">
         <div class="carousel-caption">
@@ -82,10 +120,14 @@ session_start();
         </div>
       </div>
     </div>
-    <!-- Controls -->
+    <Controls
+
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span></a></div>
 </section>
-<!-- Slider Section -->
+<lider Section -->
+
+
+
 <!-- Service Section -->
 <section id="services" class="section services">
   <div class="container-fluid">
