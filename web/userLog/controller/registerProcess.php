@@ -9,13 +9,17 @@
 include_once("config.php");
 
 // if(isset($_POST['Submit'])) {
+    $value = "0";
+    $newValue = str_pad($value,2,"0");
     $user = array (
                 'lastName' => $_POST['lastName'],
                 'firstName' => $_POST['firstName'],
                 'email' => $_POST['eMail'],
                 'userName' => $_POST['userName'],
                 'password' => $_POST['password'],
-                'userType' => $_POST['userType']
+                'userType' => $_POST['userType'],
+                'follower' =>  $newValue,
+                'following' =>  $newValue
             );
 
     // checking empty fields
@@ -28,7 +32,8 @@ include_once("config.php");
 
     if ($errorMessage) {
         // print error message & link to the previous page
-				header('Location: ../registerFail.php');
+				// header('Location: ../registerFail.php');
+        echo $newValue;
     } else {
         //insert data to database table/collection named 'users'
         $db->users->insert($user);

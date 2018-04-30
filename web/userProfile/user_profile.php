@@ -9,6 +9,18 @@ session_start();
       </script>";
 
         exit;}
+        $email=$_SESSION['email'];
+        $query = $db->users->find(array("email" => $email));
+
+        foreach($query as $dbQuery)
+
+
+        // echo '<pre>';
+        //
+        // foreach ( $query as $current )
+        //     print_r($current);
+        //
+        // echo '</pre>';
 
 
 ?>
@@ -35,7 +47,9 @@ session_start();
         <div class="panel panel-default">
           <div class="userprofile social ">
             <div class="userpic"> <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="userpicimg"> </div>
-            <h3 class="username"><?php echo $_SESSION['lastName']." ".$_SESSION['firstName']; ?></h3>
+            <h3 class="username"><?php
+
+            echo $dbQuery['lastName']." ".$dbQuery['firstName']; ?></h3>
             <p>user Place</p>
             <div class="socials tex-center"> <a href="" class="btn btn-circle btn-primary ">
             <i class="fa fa-facebook"></i></a> <a href="" class="btn btn-circle btn-danger ">
@@ -46,11 +60,11 @@ session_start();
           <div class="col-md-12 border-top border-bottom">
             <ul class="nav nav-pills pull-left countlist" role="tablist">
               <li role="presentation">
-                <h3>1452<br>
+                <h3><?php echo $dbQuery['follower']; ?><br>
                   <small>Follower</small> </h3>
               </li>
               <li role="presentation">
-                <h3>245<br>
+                <h3><?php echo $dbQuery['following']; ?><br>
                   <small>Following</small> </h3>
               </li>
               <li role="presentation">
