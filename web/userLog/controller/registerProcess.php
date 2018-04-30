@@ -14,7 +14,8 @@ include_once("config.php");
                 'firstName' => $_POST['firstName'],
                 'email' => $_POST['eMail'],
                 'userName' => $_POST['userName'],
-                'password' => $_POST['password']
+                'password' => $_POST['password'],
+                'userType' => $_POST['userType']
             );
 
     // checking empty fields

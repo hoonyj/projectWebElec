@@ -16,6 +16,7 @@ $result = $user->findOne($qry);
 if($result){
 
   $_SESSION['email']=$qry['email'];
+
   header('Location: ../../mainpage.php');
 }else{
 

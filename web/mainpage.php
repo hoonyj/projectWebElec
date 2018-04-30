@@ -53,6 +53,7 @@ session_start();
       window.location.href='../index.php';
       </script>";
         exit;}
+
 ?>
 
 <!-- Header Section -->
@@ -65,7 +66,7 @@ session_start();
           <li><a href="#header-slider">Home</a></li>
           <li><a href="#services">Our Services</a></li>
           <li><a href="#portfolio">Our Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="userProfile/user_profile.php">Me</a></li>
           <li><a href="userLog/logout.php">Logout</a></li>
         </ul>
       </nav>

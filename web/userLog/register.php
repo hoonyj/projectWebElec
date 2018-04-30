@@ -56,6 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input placeholder="E-mail" name="eMail" type="email" required="">
 					<input placeholder="Username" name="userName" type="text" required="">
 					<input placeholder="Password" name="password" type="password" required="">
+          <input type="hidden" name="userType" value=1>
 
 					<input type="submit" name="Submit" value="Register">
 				</form>
