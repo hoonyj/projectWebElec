@@ -34,11 +34,37 @@ session_start();
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/user_profile_css.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+  <!-- Header Section -->
+  <section class="tophead" role="tophead">
+    <!-- Navigation Section -->
+    <header id="header">
+      <div class="header-content clearfix"> <a class="logo" href="#">Auro</a>
+        <nav class="navigation" role="navigation">
+          <ul class="primary-nav">
+            <li><a href="web/mainpage.php">Home</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#portfolio">Our Portfolio</a></li>
+            <li><a href="userProfile/user_profile.php">Me</a></li>
+            <li><a href="userLog/logout.php">Logout</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+    </header>
+    <!-- Navigation Section -->
+  </section>
+  <!-- Header Section -->
+
+
 <a href="../userLog/logout.php" class="btn btn-info" role="button">Logout</a>
 
 <div class="container">
@@ -367,6 +393,11 @@ session_start();
       window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
     });
 </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/main.js"></script>
 
 </body></html>

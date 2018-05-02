@@ -38,6 +38,7 @@ h1 + p {
 .tabs a:hover,
 .tabs a.active {
   background: #ddd;
+  text-decoration: none;
 }
 .tabgroup div {
   padding: 30px;

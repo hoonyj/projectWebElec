@@ -29,7 +29,7 @@ img{max-width:100%;}
 /*end reset*/
 body {
 	font-family: 'Raleway', sans-serif;
-	background: url("../images/1.jpg") no-repeat 0px 0px;
+	background: url("../images/collage1.jpg") no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 100vh;
 }
@@ -139,7 +139,7 @@ span.check-w3 {
     color: #fff;
     float: right;
     font-size: 1em;
-}   
+}
 /*--//main--*/
 
 /*--footer--*/

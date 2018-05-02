@@ -35,7 +35,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 		<!--header-->
 		<div class="header-w3l">
-			<h1>tumblr</h1>
 		</div>
 		<!--//header-->
 
@@ -43,10 +42,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="content">
 		<div class="main-content-agile">
 			<div class="wthree-pro">
-				<h2>Registers</h2>
-				<h3>Enroll for our <span>free</span> updates</h3>
-				<li>We will send you weekly updates</li>
-				<li>Get daily articles and latest news</li>
+				<h2>Register</h2>
+
+        <h3 style="margin-bottom: 0px;">Come for what you love.</h3>
+        <h3>Stay for what you discover.</h3>
+        <h4>Join <span>Tumblr</span> now!</h4>
 			</div>
 			<div class="sub-main-w3">
 

@@ -33,20 +33,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </head>
 <body>
-		<!--header-->
-		<div class="header-w3l">
-			<h1>Tumblr</h1>
-		</div>
-		<!--//header-->
+
+
+    <!--header-->
+    <div class="header-w3l">
+    </div>
+    <!--//header-->
 
 		<!--main-->
 		<div class="content">
 		<div class="main-content-agile">
 			<div class="wthree-pro">
-				<h2>Login</h2>
-				<h3>Enroll for our <span>free</span> updates</h3>
-				<li>We will send you weekly updates</li>
-				<li>Get daily articles and latest news</li>
+				<h2>Login in to Tumblr.</h2>
 			</div>
 			<div class="sub-main-w3">
 				<form action="controller/loginProcess.php" method="post">

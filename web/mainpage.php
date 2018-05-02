@@ -82,24 +82,20 @@ session_start();
   <li><a href="#tab1" class="active fa fa-font fa-2x" ></a></li>
   <li><a href="#tab2" class="fa fa-camera fa-2x"></a></li>
   <li><a href="#tab3"  class="fa fa-link fa-2x"></a></li>
-  <li><a href="#tab4">Tab 4</a></li>
-  <li><a href="#tab5">Tab 5</a></li>
 </ul>
 <section id="first-tab-group" class="tabgroup">
   <div id="tab1">
-    <h2>TEXT</h2>
+
     <input class="form-control form-control-lg" type="text" placeholder="Title">
     <input class="form-control form-control-lg" type="text" style="margin-top: 15px;" placeholder="#Tags">
 
        <label for="exampleFormControlTextarea1" style="margin-top: 15px;"></label>
        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="textarea"></textarea>
-       <button type="button" class="btn btn-success">Success</button>
-
-
+       <button type="button" class="btn btn-success btn-lg">Success</button>
   </div>
-  <div id="tab2">
-    <h2>Image Upload</h2>
 
+
+  <div id="tab2">
 
     <SECTION>
       <DIV id="dropzone">
@@ -110,11 +106,10 @@ session_start();
           </DIV>
         </FORM>
       </DIV>
-       <button type="button" class="btn btn-success">Success</button>
+       <button type="button" class="btn btn-success btn-lg">Success</button>
     </SECTION>
 
     <br/>
-
 
     <DIV id="preview-template" style="display: none;">
     <DIV class="dz-preview dz-file-preview">
@@ -148,30 +143,19 @@ session_start();
       </svg>
     </div>
   </div>
-
-      </div>
-    </div>
-
-
-
-
-
+  </div>
+</div>
 
   <div id="tab3">
-    <h2>Link</h2>
+
     <input class="form-control form-control-lg" type="text" placeholder="Link">
 
-       <button type="button" class="btn btn-success">Success</button>
+       <button type="button" class="btn btn-success btn-lg">Success</button>
 
 </section>
 </div>
 </div>
 <!-- Upload Section -->
-
-
-
-
-
 
 
 
