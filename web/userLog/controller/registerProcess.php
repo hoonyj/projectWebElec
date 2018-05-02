@@ -15,7 +15,6 @@ include_once("config.php");
                 'lastName' => $_POST['lastName'],
                 'firstName' => $_POST['firstName'],
                 'email' => $_POST['eMail'],
-                'userName' => $_POST['userName'],
                 'password' => $_POST['password'],
                 'userType' => $_POST['userType'],
                 'follower' =>  $newValue,

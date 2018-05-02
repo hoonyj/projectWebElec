@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="keywords" content="Elegant Subscribe Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <script>
     addEventListener("load", function () {
       setTimeout(hideURLbar, 0);
@@ -22,30 +23,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     }
   </script>
   <!-- //Meta-Tags -->
-
   <!-- css files -->
   <link rel="stylesheet" href="web/css/login.css" type="text/css" media="all" /> <!-- Style-CSS -->
   <!-- //css files -->
   <!-- web-fonts -->
   <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
   <!-- //web-fonts -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
-<body>
-  <!--header-->
-  <div class="header-w3l">
-    <h1>Tumblr</h1>
-  </div>
-  <!--//header-->
-
+<body class="background">
   <!--main-->
   <div class="content">
     <div class="main-content-agile">
       <div class="wthree-pro">
-        <h2>WELCOME</h2>
-        <h3>Enroll for our <span>free</span> updates</h3>
-        <li>We will send you weekly updates</li>
-        <li>Get daily articles and latest news</li>
+        <h2>WELCOME TO FACET</h2>
+        <h3 class="text-dark">Post and follow people on FACET</h3>
       </div>
       <div class="sub-main-w3">
         <form action="web/userLog/login.php">
