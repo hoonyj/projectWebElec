@@ -96,7 +96,7 @@ foreach($query as $dbQuery)
           </div>
         </div>
         <div class="col-md-9">
-          <form action="userLog/controller/postProcess.php" method="POST">
+          <form action="controller/postProcess.php" method="POST">
             <textarea name="postContent"></textarea>
             <button type="submit">submit</button>
           </form>
