@@ -86,11 +86,12 @@ foreach($query as $dbQuery)
             <div class="card-body">
               <h2 class="card-title">
                 <?php
-                echo $dbQuery['lastName']." ".$dbQuery['firstName']; 
+                echo $dbQuery['lastName']." ".$dbQuery['firstName'];
                 ?>
               </h2>
-              <p class="card-text">Followers: 100</p>
-              <p class="card-text">Following: 100</p>
+              <p class="card-text">Followers <?php echo $dbQuery['follower']; ?></p>
+              <p class="card-text">Following <?php echo $dbQuery['following']; ?></p>
+              <button class="btn btn-primary followbtn">Follow</button>
             </div>
           </div>
         </div>
@@ -99,8 +100,8 @@ foreach($query as $dbQuery)
             <textarea name="postContent"></textarea>
             <button type="submit">submit</button>
           </form>
-          
-              <?php     
+
+              <?php
               foreach ($result as $res) {
                 echo "
                 <div class='pt-4 pb-4'>
