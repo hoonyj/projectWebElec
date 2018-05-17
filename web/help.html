@@ -1,4 +1,70 @@
-﻿<b><label>Resetting your password</label></b>
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Required Bootstrap Links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+            crossorigin="anonymous">
+
+        <!-- Required Froala Links -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css"
+        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/css/froala_style.min.css" rel="stylesheet" type="text/css"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+        <!-- <link rel="stylesheet" href="/css/helpolicy.css" type="text/css" media="all" /> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+
+        <title>FACET - Post For Fun</title>
+    </head>
+
+    <body>
+        <!-- NAVIGATION -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h2>
+                        <i class="fas fa-users"></i> FACET</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsiveNav" aria-controls="responsiveNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="responsiveNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="userProfile/user_profile.php">
+                                <i class="fas fa-user"></i> Profile</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="settingsDD" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i> Settings</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-edit"></i> Account</a>
+                                <a class="dropdown-item" href="userLog/logout.php">
+                                    <i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="bg-light">
+            <div class="container">
+
+<b><label>Resetting your password</label></b>
 
 <p>To change the password for your account when you're already logged in, click "Settings" under the account menu at the top of the dashboard (looks like a little human). Update your password in the Password section and click "Save.”</p>
 
@@ -157,3 +223,27 @@
 <p>On iOS: Tap the account icon (looks like a person), tap your blog's name in the upper left corner, then swipe left on the blog you'd like to delete or leave and choose "Delete" or "Leave."</p>
 <p>On Android: Tap the account icon (looks like a person), tap your blog's name in the upper left corner, tap the gear icon, then choose "Delete this FaceT" or "Leave the group."</p>
 <p>If you're the sole member of the blog, choosing "Delete blog" will remove it from FaceT and release its URL for anyone to use. If there’s at least one remaining member of the blog, you can't delete it, but choosing "Leave blog" will remove you from it. If you were the only blog Admin, another member will be automatically promoted to Admin. Learn more about administering group blogs here</p>
+</div>
+</main>
+
+<!-- Required Boostrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
+
+<!-- Required Froala Scripts -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/js/froala_editor.pkgd.min.js"></script>
+<script>
+    $(function () {
+        $('textarea').froalaEditor()
+    });
+</script>
+</body>
+
+</html>
