@@ -1,77 +1,9 @@
-/* ------------------------------------------------------------------------------
-	 Tab
--------------------------------------------------------------------------------*/
-
-.wrapper {
-  margin: 30px auto;
-  width: 48%;
-  font-family: sans-serif;
-  color: #555;
-  font-size: 14px;
-  line-height: 24px;
-}
-h1 {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-h1 + p {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 16px;
-}
-.tabs li {
-  float: left;
-  width: 20%;
-}
-.tabs a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #888;
-  padding: 20px 0;
-  border-bottom: 2px solid #888;
-  background: #f7f7f7;
-}
-.tabs a:hover,
-.tabs a.active {
-  background: #ddd;
-  text-decoration: none;
-}
-.tabgroup div {
-  padding: 30px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1400px;
+    }
 }
 
-/* ------------------------------------------------------------------------------
-	 DropZone
--------------------------------------------------------------------------------*/
-.dropzoneBody {
-    background: rgb(243, 244, 245);
-    height: 100%;
-    color: rgb(100, 108, 127);
-    line-height: 1.4rem;
-    font-family: Roboto, "Open Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-}
-
-h1 { text-align: center; }
-
-.dropzone {
-    background: white;
-    border-radius: 5px;
-    border: 2px dashed rgb(0, 135, 247);
-    border-image: none;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+.shadow {
+  box-shadow: 0 0px 18px 0 rgba(0, 0, 0, 0.5);
 }
