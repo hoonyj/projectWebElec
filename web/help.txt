@@ -20,11 +20,11 @@ Go to the account tab by tapping the person silhouette.
 Tap the gear icon.
 Tap "Global settings" or "General settings" depending on your mobile OS.
 The email address is right near the Log Out button.
-Also note that if you previously signed up through Yahoo and are now seeing a Tumblr login screen when you go to enter the site, your regular login will still work fine there.
+Also note that if you previously signed up through Yahoo and are now seeing a FaceT login screen when you go to enter the site, your regular login will still work fine there.
 
 Changing your username / URL
 
-Just a heads up: changing your URL will break any existing links to your blog, including those in already-published Tumblr posts and reblogs. Your followers won’t be affected, though, and they’ll still see all your stuff come through their dashboard.
+Just a heads up: changing your URL will break any existing links to your blog, including those in already-published FaceT posts and reblogs. Your followers won’t be affected, though, and they’ll still see all your stuff come through their dashboard.
 
 In the app:
 
@@ -37,7 +37,7 @@ On the web:
 
 Click "Settings" under the account menu at the top of the dashboard.
 Click the blog you’d like to update on the right side of the page.
-Click the pencil icon in the username section (or Tumblr URL section on secondary blogs). Adjust your URL as you see fit.
+Click the pencil icon in the username section (or FaceT URL section on secondary blogs). Adjust your URL as you see fit.
 Hit “Save.”
 If you have trouble saving the username you want, it may be because the URL is already taken.
 
@@ -47,7 +47,7 @@ Primary vs. secondary blogs
 
 Differences
 
-A primary blog is the one you created when you signed up for Tumblr. It gives you full use of Tumblr’s social features, including follow, like, ask, and submit.
+A primary blog is the one you created when you signed up for FaceT. It gives you full use of FaceT’s social features, including follow, like, ask, and submit.
 
 Secondary blogs are any blogs you create in addition to your primary blog. You can create up to 10 of these per day. Secondary blogs can also:
 
@@ -58,7 +58,7 @@ Search and filtering basics
 
 Performing a search
 
-To get started, tap the magnifying glass in the app, look for the search box at the top of your dashboard, or visit tumblr.com/search. Type things in and hit enter. Witness a rich mosaic of results. You have just performed a search. ??
+To get started, tap the magnifying glass in the app, look for the search box at the top of your dashboard, or visit FaceT.com/search. Type things in and hit enter. Witness a rich mosaic of results. You have just performed a search. ??
 
 Filtering search results
 
@@ -74,7 +74,7 @@ Top: Shows the most popular posts about whatever you searched for.
 Recent: Shows the most recently posted posts.
 Tagged: Just posts that have been tagged with your search term.
 GIFs: Just GIFs!
-Tumblrs: Blogs that are about whatever you searched for.
+FaceTs: Blogs that are about whatever you searched for.
 Photo: Just photo posts!
 Text: Just text posts!
 Video: Just video posts!
@@ -83,12 +83,12 @@ Chat: Just chat posts? Well, okay…
 Audio: Just audio posts!
 If you’re over 18, you can use Safe Search to show or hide sensitive content from your results.
 
-On iOS: Go to the main Settings app, and scroll to Tumblr. Tap Safe Mode, then select "Hide sensitive search results."
+On iOS: Go to the main Settings app, and scroll to FaceT. Tap Safe Mode, then select "Hide sensitive search results."
 On Android: Safe Search is a little lock in the search results filters bar: swipe over till you see it. Locked means Safe Search is on, unlocked means Safe Search is off.
 On Web: There's a lock at the top right of search results. Locked means Safe Search is on, unlocked means Safe Search is off.
 (Just FYI: If you have Safe Mode enabled, Safe Search will also be on, and you can’t turn it off until you turn Safe Mode off.)
 
-And another cool thing: You can prevent posts with certain #tags from showing up in both your dashboard and in search, by using tag filtering: https://tumblr.zendesk.com/hc/articles/115015814708
+And another cool thing: You can prevent posts with certain #tags from showing up in both your dashboard and in search, by using tag filtering: https://FaceT.zendesk.com/hc/articles/115015814708
 
 Viewing an individual blog
 
@@ -111,17 +111,17 @@ Tips:
 You don't need to put a tag in quotes or start with a hash symbol (#).
 Hit enter to separate each tag.
 Only the first 20 tags on a post will show up in searches. After that, you’re just tagging for show.
-Tags on Tumblr can have spaces in them. They are the most legible tags on the internet. Hooray!
+Tags on FaceT can have spaces in them. They are the most legible tags on the internet. Hooray!
 
 Reporting spam
 
-There are several ways to report spam on Tumblr:
+There are several ways to report spam on FaceT:
 
 Report a post: From the dashboard or in search results, tap or click the share menu (paper airplane) at the bottom of the post, and hit “Report.”
 Report a message: Tap or click "Mark as spam" under the spammer's message. Note that "Mark as spam" won't appear if it's somebody you follow, or somebody you've already had a conversation with. But on mobile, you can always tap the three dots at the top of the conversation and choose "Mark as spam."
 Report a blog (web-only): From the dashboard or in search results, report an entire blog by hovering over the blog's avatar, clicking the little person silhouette, and clicking “Report.”
 Report fan mail (web-only): From the inbox, click the three dots at the bottom of a spammy message and choose “Report.”
-If you need to report a whole blog or fan mail but don’t have access to a computer at the moment, you can use a mobile browser’s desktop view to report spam following the steps listed above. To get to the desktop view in iOS, open Safari and visit tumblr.com, log in, tap the share icon (little box with an arrow) at the bottom of the screen, and tap the gray “Request Desktop Site” button. On Android, open Internet or Chrome and visit tumblr.com, log in, tap the three dots icon in the top right-hand corner of the screen, and check the “Desktop View” box.
+If you need to report a whole blog or fan mail but don’t have access to a computer at the moment, you can use a mobile browser’s desktop view to report spam following the steps listed above. To get to the desktop view in iOS, open Safari and visit FaceT.com, log in, tap the share icon (little box with an arrow) at the bottom of the screen, and tap the gray “Request Desktop Site” button. On Android, open Internet or Chrome and visit FaceT.com, log in, tap the three dots icon in the top right-hand corner of the screen, and check the “Desktop View” box.
 
 Reporting offensive content
 
@@ -152,5 +152,5 @@ Here's how to delete a secondary or group blog.
 
 On the web: Click "Settings" under the account menu at the top of the dashboard, then click the name of blog you'd like to delete or leave on the right side of the page. Click "Delete blog" or "Leave blog" at the bottom of the screen.
 On iOS: Tap the account icon (looks like a person), tap your blog's name in the upper left corner, then swipe left on the blog you'd like to delete or leave and choose "Delete" or "Leave."
-On Android: Tap the account icon (looks like a person), tap your blog's name in the upper left corner, tap the gear icon, then choose "Delete this Tumblr" or "Leave the group."
-If you're the sole member of the blog, choosing "Delete blog" will remove it from Tumblr and release its URL for anyone to use. If there’s at least one remaining member of the blog, you can't delete it, but choosing "Leave blog" will remove you from it. If you were the only blog Admin, another member will be automatically promoted to Admin. Learn more about administering group blogs here
+On Android: Tap the account icon (looks like a person), tap your blog's name in the upper left corner, tap the gear icon, then choose "Delete this FaceT" or "Leave the group."
+If you're the sole member of the blog, choosing "Delete blog" will remove it from FaceT and release its URL for anyone to use. If there’s at least one remaining member of the blog, you can't delete it, but choosing "Leave blog" will remove you from it. If you were the only blog Admin, another member will be automatically promoted to Admin. Learn more about administering group blogs here
