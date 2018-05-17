@@ -54,6 +54,8 @@ foreach($query as $dbQuery)
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <input id='s' type='search'>
+      
       <div class="collapse navbar-collapse" id="responsiveNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -186,6 +188,7 @@ foreach($query as $dbQuery)
                   <div class='card-footer text-right'>
                     <button type='submit' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
                     <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
+                    <button type='submit' class='btn btn-danger'><i class='fa fa-trash'></i></button>
                   </div>
                 </div>
               </div>
@@ -237,6 +240,7 @@ foreach($query as $dbQuery)
               <div class="card-footer text-right">
                 <button type="submit" class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Like</button>
                 <button type="submit" class="btn btn-primary"><i class="fas fa-comment"></i> Comment</button>
+                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
               </div>
             </div>
           </div>
