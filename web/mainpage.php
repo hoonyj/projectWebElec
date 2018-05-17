@@ -49,7 +49,7 @@ foreach($query as $dbQuery)
   <!-- NAVIGATION -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
     <div class="container">
-      <a class="navbar-brand" href="#"><h2><i class="fas fa-users"></i> FACET</h2></a>
+      <a class="navbar-brand" href="mainpage.php"><h2><i class="fas fa-users"></i> FACET</h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsiveNav" aria-controls="responsiveNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,8 +80,13 @@ foreach($query as $dbQuery)
             <h4 class="card-title pt-4 text-center"><?php echo $dbQuery['lastName']." ".$dbQuery['firstName']; ?></h4>
             <img class="card-img-top rounded-circle ml-auto mr-auto" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Card image cap" style="height: 100px; width: 100px">
             <hr class="mr-3 ml-3">
-            <div class="card-body pt-0">
-              <button class="btn btn-outline-primary btn-block"><i class="fas fa-heart"></i> Follow</button>
+            <div class="card-body pt-0 text-center">
+              <!--<button class="btn btn-outline-primary btn-block"><i class="fas fa-plus"></i> Follow</button-->
+                <button class="follow btn btn-outline-primary">
+                  <span class="msg-follow"> <i class="fas fa-plus"></i> Follow</span>
+                  <span class="msg-following">Following</span>
+                  <span class="msg-unfollow"><i class="fas fa-minus"></i> Unfollow</span>
+                </button>
             </div>
           </div>
 
@@ -92,22 +97,38 @@ foreach($query as $dbQuery)
                 <h4>
                   <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
                   <small>James Tarrobal</small>
-                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                  <button class="follow btn btn-outline-primary">
+                    <span class="msg-follow"> <i class="fas fa-plus"></i> Follow</span>
+                    <span class="msg-following">Following</span>
+                    <span class="msg-unfollow"><i class="fas fa-minus"></i> Unfollow</span>
+                  </button>
                 </h4>
                 <h4>
                   <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
                   <small>James Tarrobal</small>
-                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                  <button class="follow btn btn-outline-primary">
+                    <span class="msg-follow"> <i class="fas fa-plus"></i> Follow</span>
+                    <span class="msg-following">Following</span>
+                    <span class="msg-unfollow"><i class="fas fa-minus"></i> Unfollow</span>
+                  </button>
                 </h4>
                 <h4>
                   <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
                   <small>James Tarrobal</small>
-                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                  <button class="follow btn btn-outline-primary">
+                    <span class="msg-follow"> <i class="fas fa-plus"></i> Follow</span>
+                    <span class="msg-following">Following</span>
+                    <span class="msg-unfollow"><i class="fas fa-minus"></i> Unfollow</span>
+                  </button>
                 </h4>
                 <h4>
                   <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
                   <small>James Tarrobal</small>
-                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                  <button class="follow btn btn-outline-primary">
+                    <span class="msg-follow"> <i class="fas fa-plus"></i> Follow</span>
+                    <span class="msg-following">Following</span>
+                    <span class="msg-unfollow"><i class="fas fa-minus"></i> Unfollow</span>
+                  </button>
                 </h4>
               </div>
             </div>
@@ -235,10 +256,17 @@ foreach($query as $dbQuery)
     </div>
   </main>
 
+
+  <!-- Scripts for follow button -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+
   <!-- Required Boostrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
 
   <!-- Required Froala Scripts -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
