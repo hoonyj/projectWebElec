@@ -50,6 +50,8 @@ foreach($query as $dbQuery)
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <input id='s' type='search'>
+      
       <div class="collapse navbar-collapse" id="responsiveNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -76,14 +78,13 @@ foreach($query as $dbQuery)
             <h4 class="card-title pt-4 text-center"><?php echo $dbQuery['lastName']." ".$dbQuery['firstName']; ?></h4>
             <img class="card-img-top rounded-circle ml-auto mr-auto" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Card image cap" style="height: 100px; width: 100px">
             <hr class="mr-3 ml-3">
-            <div class="card-body pt-0 text-center">
-              <!--<button class="btn btn-outline-primary btn-block"><i class="fas fa-plus"></i> Follow</button-->
-                <button class="follow btn btn-outline-primary">
-                  <span class="msg-follow"> <i class="fas fa-plus"></i> Follow</span>
-                  <span class="msg-following">Following</span>
-                  <span class="msg-unfollow"><i class="fas fa-minus"></i> Unfollow</span>
-                </button>
-            </div>
+              <div class=" text-center">
+                <!--<button class="btn btn-outline-primary btn-block"><i class="fas fa-plus"></i> Follow</button-->
+                <h5 class="card-title pt-4">Followers</h5>
+                <p class="card-text"><?php echo $dbQuery['follower']; ?></p>
+                <h5 class="card-title pt-4">Following</h5>
+                <p class="card-text pb-4"><?php echo $dbQuery['following']; ?></p>
+              </div>
           </div>
 
           <div class="card shadow mb-4">
@@ -190,15 +191,11 @@ foreach($query as $dbQuery)
                   </div>
 
                   <!-- Others -->
-                  <div class='card-footer pt-0'>
-                    <form action='userLog/controller/commentProccess.php' method='POST'>
-                      <textarea name='commentContent'></textarea>
-                      <input name='postId' type='hidden' value='".$res['_id']."' ?>
-                      <div class='text-right'>
-                        <button type='' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
-                        <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
-                      </div>
-                    </form>
+
+                  <div class='card-footer text-right'>
+                    <button type='submit' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
+                    <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
+                    <button type='submit' class='btn btn-danger'><i class='fa fa-trash'></i></button>
                   </div>
                 </div>
               </div>
@@ -247,12 +244,12 @@ foreach($query as $dbQuery)
               </div>
 
               <!-- Others -->
-              <div class="card-footer text-right pt-0">
-                <form action="userLog/controller/commentProcess.php" method="POST">
-                  <textarea name="commentContent"></textarea>
-                  <button type="" class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Like</button>
-                  <button type="submit" class="btn btn-primary"><i class="fas fa-comment"></i> Comment</button>
-                </form>
+
+              <div class="card-footer text-right">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Like</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-comment"></i> Comment</button>
+                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+
               </div>
             </div>
           </div>
