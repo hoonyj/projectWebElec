@@ -46,9 +46,22 @@ $(document).ready(function() {
 		$(this).toggleClass('close-nav');
 		nav.toggleClass('open');
 		return false;
-	});	
+	});
 	nav.find('a').on('click', function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
 	});
 });
+
+
+//*follow button*//
+
+$('button').click(function(){
+  var $this = $(this);
+  $this.toggleClass('following')
+  if($this.is('.following')){
+    $this.addClass('wait');
+  }
+}).on('mouseleave',function(){
+  $(this).removeClass('wait');
+})
