@@ -6,13 +6,24 @@
 <body>
 <?php
 //including the database connection file
+session_start();
 include_once("config.php");
+if(empty($_SESSION['_id'])){
+echo "<script>
+  window.location.href='../index.php';
+</script>";
+
+exit;}
+$id=$_SESSION['_id'];
+$query = $db->users->find(array("_id" => $id));
+foreach($query as $dbQuery)
 
 // if(isset($_POST['Submit'])) {
     $value = "0";
     $newValue = str_pad($value,2,"0");
     $post = array (
                 'content' => $_POST['postContent'],
+                'userid' => $_SESSION['_id']
             );
 
     // checking empty fields

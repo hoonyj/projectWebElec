@@ -1,76 +1,77 @@
-Resetting your password
+<label>Resetting your password</label>
 
-To change the password for your account when you're already logged in, click "Settings" under the account menu at the top of the dashboard (looks like a little human). Update your password in the Password section and click "Save.”
+<p>To change the password for your account when you're already logged in, click "Settings" under the account menu at the top of the dashboard (looks like a little human). Update your password in the Password section and click "Save.”</p>
 
-To reset your password, just head over to our password reset page and request a new one. It may take up to 10 minutes to receive an email from us. If you try a few times and still aren't receiving anything, have a look at our article addressing Email troubleshooting for tips on how to fix the problem.
+<p>To reset your password, just head over to our password reset page and request a new one. It may take up to 10 minutes to receive an email from us. If you try a few times and still aren't receiving anything, have a look at our article addressing Email troubleshooting for tips on how to fix the problem.
 
-Managing your email address
+<label>Managing your email address</label>
 
-Here's how to manage your registered email address. Please note that you can't change your email address from the app at this time, but you can do so from your computer or from a mobile browser.
+<p>Here's how to manage your registered email address. Please note that you can't change your email address from the app at this time, but you can do so from your computer or from a mobile browser.
 
-To view or change it from the web:
+<label>To view or change it from the web:</label>
 
-Click "Settings" under the account menu at the top of the dashboard (looks like a person's silhouette).
+<p>Click "Settings" under the account menu at the top of the dashboard (looks like a person's silhouette).
 To the right of your email address, click the pencil icon.
 Update the email address and confirm your password.
 Save your changes.
-To view it in the apps:
 
-Go to the account tab by tapping the person silhouette.
+<label>To view it in the apps:</label>
+
+<p>Go to the account tab by tapping the person silhouette.
 Tap the gear icon.
 Tap "Global settings" or "General settings" depending on your mobile OS.
 The email address is right near the Log Out button.
 Also note that if you previously signed up through Yahoo and are now seeing a FaceT login screen when you go to enter the site, your regular login will still work fine there.
 
-Changing your username / URL
+<label>Changing your username / URL</label>
 
-Just a heads up: changing your URL will break any existing links to your blog, including those in already-published FaceT posts and reblogs. Your followers won’t be affected, though, and they’ll still see all your stuff come through their dashboard.
+<p>Just a heads up: changing your URL will break any existing links to your blog, including those in already-published FaceT posts and reblogs. Your followers won’t be affected, though, and they’ll still see all your stuff come through their dashboard.
 
-In the app:
+<label>In the app:</label>
 
-Tap the account icon (the little human).
+<p>Tap the account icon (the little human).
 Tap the gear wheel icon.
 Tap "Change username."
 Enter your new username.
 Hit "Save."
-On the web:
 
-Click "Settings" under the account menu at the top of the dashboard.
+<label>On the web:</label>
+
+<p>Click "Settings" under the account menu at the top of the dashboard.
 Click the blog you’d like to update on the right side of the page.
 Click the pencil icon in the username section (or FaceT URL section on secondary blogs). Adjust your URL as you see fit.
 Hit “Save.”
-If you have trouble saving the username you want, it may be because the URL is already taken.
+<p>If you have trouble saving the username you want, it may be because the URL is already taken.
 
-And by the way: after you save it, we still hold your old URL for 24 hours, just in case you change your mind, or you want to use it on one of your secondary blogs. After that, though, your URL is released into the wild. Wish it well.
+<p>And by the way: after you save it, we still hold your old URL for 24 hours, just in case you change your mind, or you want to use it on one of your secondary blogs. After that, though, your URL is released into the wild. Wish it well.
 
-Primary vs. secondary blogs
+<label>Primary vs. secondary blogs</label>
 
-Differences
+<label>Differences</label>
 
-A primary blog is the one you created when you signed up for FaceT. It gives you full use of FaceT’s social features, including follow, like, ask, and submit.
+<p>A primary blog is the one you created when you signed up for FaceT. It gives you full use of FaceT’s social features, including follow, like, ask, and submit.
 
-Secondary blogs are any blogs you create in addition to your primary blog. You can create up to 10 of these per day. Secondary blogs can also:
-
+<p>Secondary blogs are any blogs you create in addition to your primary blog. You can create up to 10 of these per day. Secondary blogs can also:
 Be password-protected, if you like
 Have multiple users who can create and manage posts
 
-Search and filtering basics
+<label>Search and filtering basics</label>
 
-Performing a search
+<label>Performing a search</label>
 
-To get started, tap the magnifying glass in the app, look for the search box at the top of your dashboard, or visit FaceT.com/search. Type things in and hit enter. Witness a rich mosaic of results. You have just performed a search. ??
+<p>To get started, tap the magnifying glass in the app, look for the search box at the top of your dashboard, or visit FaceT.com/search. Type things in and hit enter. Witness a rich mosaic of results. You have just performed a search. ??
 
-Filtering search results
+<label>Filtering search results</label>
 
-On the web, you have a few different drop-down menus at the top of your search results:
+<p>On the web, you have a few different drop-down menus at the top of your search results:
 
-You can filter by post type via the menu at the top left. The default view is “All posts.”
+<p>You can filter by post type via the menu at the top left. The default view is “All posts.”
 You can choose whether you want to sort the posts by most recent or most popular. That’s in the next menu over, and the default view is “Top posts.”
 If you’re over 18, you can use Safe Search to show or hide sensitive content from your results. Click the padlock at the top right.
 You can toggle between two different views of the results—a compact grid and a traditional list—via the icons to the left of the padlock.
 In the app, there’s a little strip of options to choose from at the top of your results:
 
-Top: Shows the most popular posts about whatever you searched for.
+<p>Top: Shows the most popular posts about whatever you searched for.
 Recent: Shows the most recently posted posts.
 Tagged: Just posts that have been tagged with your search term.
 GIFs: Just GIFs!
@@ -83,74 +84,74 @@ Chat: Just chat posts? Well, okay…
 Audio: Just audio posts!
 If you’re over 18, you can use Safe Search to show or hide sensitive content from your results.
 
-On iOS: Go to the main Settings app, and scroll to FaceT. Tap Safe Mode, then select "Hide sensitive search results."
-On Android: Safe Search is a little lock in the search results filters bar: swipe over till you see it. Locked means Safe Search is on, unlocked means Safe Search is off.
-On Web: There's a lock at the top right of search results. Locked means Safe Search is on, unlocked means Safe Search is off.
+<p>On iOS: Go to the main Settings app, and scroll to FaceT. Tap Safe Mode, then select "Hide sensitive search results."
+<p>On Android: Safe Search is a little lock in the search results filters bar: swipe over till you see it. Locked means Safe Search is on, unlocked means Safe Search is off.
+<p>On Web: There's a lock at the top right of search results. Locked means Safe Search is on, unlocked means Safe Search is off.
 (Just FYI: If you have Safe Mode enabled, Safe Search will also be on, and you can’t turn it off until you turn Safe Mode off.)
 
-And another cool thing: You can prevent posts with certain #tags from showing up in both your dashboard and in search, by using tag filtering: https://FaceT.zendesk.com/hc/articles/115015814708
+And another cool thing: You can prevent posts with certain #tags from showing up in both your dashboard and in search, by using tag filtering: 
 
-Viewing an individual blog
+<label>Viewing an individual blog</label>
 
-To get to a user's blog from the dashboard or search results, just click or tap on the avatar or the username of the blog you’re interested in. It’ll slide in from the right side of your screen. Whoosh. Scroll through its posts, like and reblog them as you please, and when you’re done just click anywhere outside of the panel that the blog is in (on the web) or tap the back-arrow next to the blog's username. Ah, there’s the dashboard, right where you left it.
+<p>To get to a user's blog from the dashboard or search results, just click or tap on the avatar or the username of the blog you’re interested in. It’ll slide in from the right side of your screen. Whoosh. Scroll through its posts, like and reblog them as you please, and when you’re done just click anywhere outside of the panel that the blog is in (on the web) or tap the back-arrow next to the blog's username. Ah, there’s the dashboard, right where you left it.
 
-If you're on the web and want to open the blog in a new tab, just click the username at the top of the panel that slides in. Or, straight from the dashboard, you can ctrl-click (or right-click) on a username or avatar and select “Open Link in New Tab” from the menu that pops up.
+<p>If you're on the web and want to open the blog in a new tab, just click the username at the top of the panel that slides in. Or, straight from the dashboard, you can ctrl-click (or right-click) on a username or avatar and select “Open Link in New Tab” from the menu that pops up.
 
-Grabbing a post permalink
+<label>Grabbing a post permalink</label>
 
-To get the link to a particular post when viewing search results, click or tap the paper airplane icon at the bottom of the post. Then depending on the device you're using, choose "Permalink" (web), "Copy" (iOS), or "Copy to clipboard" (Android).
+<p>To get the link to a particular post when viewing search results, click or tap the paper airplane icon at the bottom of the post. Then depending on the device you're using, choose "Permalink" (web), "Copy" (iOS), or "Copy to clipboard" (Android).
 
-Tagging your posts
+<label>Tagging your posts</label>
 
-Tags make it easier for readers to find posts about a specific topic on your blog. For instance, you could tag your landscape photographs with #landscape or posts about your butler with #butler.
+<p>Tags make it easier for readers to find posts about a specific topic on your blog. For instance, you could tag your landscape photographs with #landscape or posts about your butler with #butler.
 
-Tagging your posts is as easy as you’d expect. When you create a post, enter the tags in the field at the bottom of the post form.
+<p>Tagging your posts is as easy as you’d expect. When you create a post, enter the tags in the field at the bottom of the post form.
 
-Tips:
+<label>Tips:</label>
 
-You don't need to put a tag in quotes or start with a hash symbol (#).
+<p>You don't need to put a tag in quotes or start with a hash symbol (#).
 Hit enter to separate each tag.
 Only the first 20 tags on a post will show up in searches. After that, you’re just tagging for show.
 Tags on FaceT can have spaces in them. They are the most legible tags on the internet. Hooray!
 
-Reporting spam
+<label>Reporting spam</label>
 
-There are several ways to report spam on FaceT:
+<label>There are several ways to report spam on FaceT:</label>
 
-Report a post: From the dashboard or in search results, tap or click the share menu (paper airplane) at the bottom of the post, and hit “Report.”
+<p>Report a post: From the dashboard or in search results, tap or click the share menu (paper airplane) at the bottom of the post, and hit “Report.”
 Report a message: Tap or click "Mark as spam" under the spammer's message. Note that "Mark as spam" won't appear if it's somebody you follow, or somebody you've already had a conversation with. But on mobile, you can always tap the three dots at the top of the conversation and choose "Mark as spam."
 Report a blog (web-only): From the dashboard or in search results, report an entire blog by hovering over the blog's avatar, clicking the little person silhouette, and clicking “Report.”
 Report fan mail (web-only): From the inbox, click the three dots at the bottom of a spammy message and choose “Report.”
 If you need to report a whole blog or fan mail but don’t have access to a computer at the moment, you can use a mobile browser’s desktop view to report spam following the steps listed above. To get to the desktop view in iOS, open Safari and visit FaceT.com, log in, tap the share icon (little box with an arrow) at the bottom of the screen, and tap the gray “Request Desktop Site” button. On Android, open Internet or Chrome and visit FaceT.com, log in, tap the three dots icon in the top right-hand corner of the screen, and check the “Desktop View” box.
 
-Reporting offensive content
+<label>Reporting offensive content</label>
 
-No matter where you see content that violates our Community Guidelines—on your dashboard, tag pages, or in search results—just click the share icon (that paper airplane) and choose "Report." That'll open the form and you can tell us what you're reporting from there.
+<p>No matter where you see content that violates our Community Guidelines—on your dashboard, tag pages, or in search results—just click the share icon (that paper airplane) and choose "Report." That'll open the form and you can tell us what you're reporting from there.
 
-Depending on the violation you're reporting, we might need to ask you a few extra questions to help us respond quicker.  Our trained experts then review the reported content in the order that we received it and take the appropriate action.
+<p>Depending on the violation you're reporting, we might need to ask you a few extra questions to help us respond quicker.  Our trained experts then review the reported content in the order that we received it and take the appropriate action.
 
-You'll know you've successfully reported a post when you see the confirmation note. Reports won’t always result in the content being removed - sometimes our experts may determine that the reported content doesn't violate our Community Guidelines - but perhaps more importantly: you'll never see it again.
+<p>You'll know you've successfully reported a post when you see the confirmation note. Reports won’t always result in the content being removed - sometimes our experts may determine that the reported content doesn't violate our Community Guidelines - but perhaps more importantly: you'll never see it again.
 
-If you believe your post or blog was removed in error, please contact us here.
+<p>If you believe your post or blog was removed in error, please contact us here.
 
-Deleting your account or blog
+<label>Deleting your account or blog</label>
 
-Before you do anything, please be aware that deletions cannot be undone. Never, ever. Once you delete your blog or account, its contents are gone forever.
+<p>Before you do anything, please be aware that deletions cannot be undone. Never, ever. Once you delete your blog or account, its contents are gone forever.
 
-Deleting your account
+<label>Deleting your account</label>
 
-To delete your entire account, go to your primary blog's settings page or your account settings page and hit the "delete account" button at the bottom of the page. Be aware:
+<p>To delete your entire account, go to your primary blog's settings page or your account settings page and hit the "delete account" button at the bottom of the page. Be aware:
 
-Your primary blog will be deleted. If TFA has been enabled for your account, you will be required to input the code.
+<p>Your primary blog will be deleted. If TFA has been enabled for your account, you will be required to input the code.
 Your secondary blogs that you are the only member of will be deleted, and you'll be removed from any group blogs you are a member of.
 Your blog URL will be released, and can be used by anyone who's looking to create a blog.
 You can create a new account using the same email address you used last time. Hey, go for it.
 At this time, you can only delete your account / primary blog from a browser (on your computer or in a mobile browser), rather than in the app.
 Deleting a secondary / group blog
 
-Here's how to delete a secondary or group blog.
+<label>Here's how to delete a secondary or group blog.</label>
 
-On the web: Click "Settings" under the account menu at the top of the dashboard, then click the name of blog you'd like to delete or leave on the right side of the page. Click "Delete blog" or "Leave blog" at the bottom of the screen.
+<p>On the web: Click "Settings" under the account menu at the top of the dashboard, then click the name of blog you'd like to delete or leave on the right side of the page. Click "Delete blog" or "Leave blog" at the bottom of the screen.
 On iOS: Tap the account icon (looks like a person), tap your blog's name in the upper left corner, then swipe left on the blog you'd like to delete or leave and choose "Delete" or "Leave."
 On Android: Tap the account icon (looks like a person), tap your blog's name in the upper left corner, tap the gear icon, then choose "Delete this FaceT" or "Leave the group."
 If you're the sole member of the blog, choosing "Delete blog" will remove it from FaceT and release its URL for anyone to use. If there’s at least one remaining member of the blog, you can't delete it, but choosing "Leave blog" will remove you from it. If you were the only blog Admin, another member will be automatically promoted to Admin. Learn more about administering group blogs here

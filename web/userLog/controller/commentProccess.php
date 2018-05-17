@@ -6,14 +6,25 @@
 <body>
 <?php
 //including the database connection file
+session_start();
 include_once("config.php");
+if(empty($_SESSION['_id'])){
+echo "<script>
+  window.location.href='../index.php';
+</script>";
+
+exit;}
+$id=$_SESSION['_id'];
+$query = $db->users->find(array("_id" => $id));
+foreach($query as $dbQuery)
 
 // if(isset($_POST['Submit'])) {
     $value = "0";
     $newValue = str_pad($value,2,"0");
-    $post = array (
-                'content' => $_POST['postContent'],
-                'email' => $_SESSION['email'],
+    $comment = array (
+                'content' => $_POST['commentContent'],
+                'userid' => $_SESSION['_id'],
+                'postid' => new MongoId($_POST['postId'])
             );
 
     // checking empty fields
@@ -30,7 +41,7 @@ include_once("config.php");
         echo $newValue;
     } else {
         //insert data to database table/collection named 'users'
-        $db->posts->insert($post);
+        $db->comments->insert($comment);
 
         //display success message
 				header('Location: ../../mainpage.php');
