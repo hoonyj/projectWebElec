@@ -26,7 +26,7 @@ foreach($query as $dbQuery)
 ?>
 
 <head>
-  <!-- Required Meta Tags -->
+  <!-- Meta Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -39,13 +39,17 @@ foreach($query as $dbQuery)
   <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/css/froala_style.min.css" rel="stylesheet" type="text/css" />
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
   <title>FACET - Post For Fun</title>
 </head>
 <body>
   <!-- NAVIGATION -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
     <div class="container">
-      <a class="navbar-brand" href="#">FACET</a>
+      <a class="navbar-brand" href="#"><h2><i class="fas fa-users"></i> FACET</h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsiveNav" aria-controls="responsiveNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,13 +57,13 @@ foreach($query as $dbQuery)
       <div class="collapse navbar-collapse" id="responsiveNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="userProfile/user_profile.php">My Profile</a>
+            <a class="nav-link" href="userProfile/user_profile.php"><i class="fas fa-user"></i> Profile</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="settingsDD" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+            <a class="nav-link dropdown-toggle" href="#" id="settingsDD" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i> Settings</a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="#">Account</a>
-              <a class="dropdown-item" href="userLog/logout.php">Sign Out</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Account</a>
+              <a class="dropdown-item" href="userLog/logout.php"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
             </div>
           </li>
         </ul>
@@ -67,84 +71,181 @@ foreach($query as $dbQuery)
     </div>
   </nav>
 
-  <main class="fluid-container">
+  <main class="bg-light">
     <div class="container">
       <div class="row pt-4 pb-4">
+        <!-- Left Column -->
         <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top rounded-circle mt-4 ml-auto mr-auto" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Card image cap" style="height: 100px; width: 100px">
-            <div class="card-body">
-              <h2 class="card-title">
-                <?php
-                echo $dbQuery['lastName']." ".$dbQuery['firstName'];
-                ?>
-              </h2>
-              <p class="card-text">Followers <?php echo $dbQuery['follower']; ?></p>
-              <p class="card-text">Following <?php echo $dbQuery['following']; ?></p>
-              <button class="btn btn-primary followbtn">Follow</button>
+          <div class="card shadow mb-4">
+            <h4 class="card-title pt-4 text-center"><?php echo $dbQuery['lastName']." ".$dbQuery['firstName']; ?></h4>
+            <img class="card-img-top rounded-circle ml-auto mr-auto" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Card image cap" style="height: 100px; width: 100px">
+            <hr class="mr-3 ml-3">
+            <div class="card-body pt-0">
+              <button class="btn btn-outline-primary btn-block"><i class="fas fa-heart"></i> Follow</button>
+            </div>
+          </div>
+
+          <div class="card shadow mb-4">
+            <h4 class="card-title pt-4 text-center">Reccomended Users</h4>
+            <div class="row text-center">
+              <div class="col">
+                <h4>
+                  <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
+                  <small>James Tarrobal</small>
+                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                </h4>
+                <h4>
+                  <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
+                  <small>James Tarrobal</small>
+                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                </h4>
+                <h4>
+                  <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
+                  <small>James Tarrobal</small>
+                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                </h4>
+                <h4>
+                  <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
+                  <small>James Tarrobal</small>
+                  <button class="btn btn-outline-primary"><i class="fas fa-heart"></i> Follow</button>
+                </h4>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-9">
-          <form action="userLog/controller/postProcess.php" method="POST">
-            <textarea name="postContent"></textarea>
-            <button type="submit">submit</button>
-          </form>
+
+        <!-- Center Column -->
+        <div class="col-md-7">
+          <div class="card shadow mb-4">
+            <form action="../userLog/controller/postProcess.php" method="POST">
+              <textarea name="postContent"></textarea>
+              <div class="card-footer text-right">
+                <button type="submit" class="btn btn-primary ">Post</button>
+              </div>
+            </form>
+          </div>
 
           <?php
-          foreach ($result as $res) {
-          echo "
-          <div class='pt-4 pb-4'>
-            <div class='card'>
-              <div class='card-body'>
-                <div class='row'>
-                  <div class='col-md-2'><img src='https://bootdey.com/img/Content/avatar/avatar6.png' class='img-fluid rounded-circle'></div>
-                  <div class='col-md-10'>
-                    <h5 class='card-title'>Card title</h5>
-                    <h6 class='card-subtitle mb-2 text-muted'>Card subtitle</h6>
-                    <p class='card-text'>".$res['content']."</p>
-                    <a href='#' class='card-link'>Card link</a>
-                    <a href='#' class='card-link'>Another link</a>
+            foreach ($result as $res) {
+            echo "
+              <div class='mb-4'>
+                <div class='card shadow'>
+                  <div class='card-header'>
+                    <div class='row'>
+                      <div class='col'>
+                        <h3>
+                          <img src='https://bootdey.com/img/Content/avatar/avatar6.png' class='rounded-circle' style='height: 60px; width: 60px'>
+                          <small>James Tarrobal</small>
+                        </h3>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col'>
+                        <p class='card-text'>".$res['content']."</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Comments -->
+                  <!--
+                  <div class='card-body'>
+                    <div class='row'>
+                      <div class='col-md-11 offset-md-1 pb-4'>
+                        <h3>
+                          <img src='https://bootdey.com/img/Content/avatar/avatar6.png' class='rounded-circle' style='height: 30px; width: 30px'>
+                          <small>Jamie Sulit</small>
+                        </h3>
+                        <p class='card-text'>Nam porttitor sem tortor, vel tincidunt turpis efficitur vitae. Nunc elementum, sem at bibendum elementum, diam arcu molestie nisl, nec tincidunt ipsum nulla in massa. Nullam egestas rutrum molestie.</p>
+                      </div>
+                    </div>
+                  </div>
+                  -->
+
+                  <!-- Others -->
+                  <div class='card-footer text-right'>
+                    <button type='submit' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
+                    <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          ";
-        }
-        ?>
-        <div class="pt-4 pb-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-2"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="img-fluid rounded-circle"></div>
-                <div class="col-md-10">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+            ";
+            }
+          ?>
+
+
+          <!-- POST START-->
+          <div class="pb-4">
+            <div class="card shadow">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col">
+                    <h3>
+                      <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="rounded-circle" style="height: 60px; width: 60px">
+                      <small>James Tarrobal</small>
+                    </h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text">Ut cursus condimentum leo et mattis. In eleifend, felis in congue egestas, ligula quam commodo mauris, ut varius orci arcu in quam. Cras non erat eu risus egestas vestibulum. Maecenas tincidunt semper elit id ultrices.</p>
+                  </div>
                 </div>
               </div>
+
+              <!-- Comments -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-11 offset-md-1 pb-4">
+                    <h3>
+                      <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="rounded-circle" style="height: 30px; width: 30px">
+                      <small>Jamie Sulit</small>
+                    </h3>
+                    <p class="card-text">Nam porttitor sem tortor, vel tincidunt turpis efficitur vitae. Nunc elementum, sem at bibendum elementum, diam arcu molestie nisl, nec tincidunt ipsum nulla in massa. Nullam egestas rutrum molestie.</p>
+                  </div>
+                  <div class="col-md-11 offset-md-1 pb-4">
+                    <h3>
+                      <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="rounded-circle" style="height: 30px; width: 30px">
+                      <small>Carlo Malixi</small>
+                    </h3>
+                    <p class="card-text">Nam porttitor sem tortor, vel tincidunt turpis efficitur vitae. Nunc elementum, sem at bibendum elementum, diam arcu molestie nisl, nec tincidunt ipsum nulla in massa. Nullam egestas rutrum molestie.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Others -->
+              <div class="card-footer text-right">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Like</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-comment"></i> Comment</button>
+              </div>
             </div>
+          </div>
+          <!-- POST END -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-2">
+          <div class="card shadow text-center">
+            <h4 class="card-title pt-4">Followers</h4>
+            <p class="card-text"><?php echo $dbQuery['follower']; ?></p>
+            <h4 class="card-title pt-4">Following</h4>
+            <p class="card-text pb-4"><?php echo $dbQuery['following']; ?></p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<!-- Required Boostrap Scripts -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <!-- Required Boostrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
-<!-- Required Froala Scripts -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/js/froala_editor.pkgd.min.js"></script>
-<script> $(function() { $('textarea').froalaEditor() }); </script>
-
+  <!-- Required Froala Scripts -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/js/froala_editor.pkgd.min.js"></script>
+  <script> $(function() { $('textarea').froalaEditor() }); </script>
 </body>
 </html>
+
