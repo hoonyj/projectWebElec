@@ -28,8 +28,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="sub-main-w3">
 				<form action="controller/registerProcess.php" method="post">
-					<input placeholder="Last Name" name="lastName" type="text" required="">
 					<input placeholder="First Name" name="firstName" type="text" required="">
+					<input placeholder="Last Name" name="lastName" type="text" required="">
 					<input placeholder="E-mail" name="eMail" type="email" required="">
 					<input placeholder="Password" name="password" type="password" required="">
 					<input type="hidden" name="userType" value=1>

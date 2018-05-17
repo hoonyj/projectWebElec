@@ -3,19 +3,15 @@
 <?php
 session_start();
 require_once('userprofile/controller/config_user.php');
-if(empty($_SESSION['email'])){
+if(empty($_SESSION['_id'])){
 echo "<script>
   window.location.href='../index.php';
 </script>";
 
 exit;}
-$email=$_SESSION['email'];
-$query = $db->users->find(array("email" => $email));
-
-$result = $db->posts->find()->sort(array('_id' => -1));
-
+$id=$_SESSION['_id'];
+$query = $db->users->find(array("_id" => $id));
 foreach($query as $dbQuery)
-
 
 // echo '<pre>';
   //
@@ -126,7 +122,11 @@ foreach($query as $dbQuery)
           </div>
 
           <?php
-            foreach ($result as $res) {
+            $post = $db->posts->find()->sort(array('_id' => -1));
+            foreach ($post as $res) {
+            $poster = $db->users;
+            $query = array("_id" => $res['userid']);
+            $postU = $poster->findOne($query);
             echo "
               <div class='mb-4'>
                 <div class='card shadow'>
@@ -135,7 +135,7 @@ foreach($query as $dbQuery)
                       <div class='col'>
                         <h3>
                           <img src='https://bootdey.com/img/Content/avatar/avatar6.png' class='rounded-circle' style='height: 60px; width: 60px'>
-                          <small>James Tarrobal</small>
+                          <small>".$postU['lastName']." ".$postU['firstName']."</small>
                         </h3>
                       </div>
                     </div>
@@ -145,26 +145,39 @@ foreach($query as $dbQuery)
                       </div>
                     </div>
                   </div>
-
                   <!-- Comments -->
-                  <!--
                   <div class='card-body'>
-                    <div class='row'>
-                      <div class='col-md-11 offset-md-1 pb-4'>
+                    <div class='row'>";
+            $comments = $db->comments;
+            $qry = array("postid" => $res['_id']);
+            $comment = $comments->find($qry);
+            foreach ($comment as $commentR) {
+            $commenter = $db->users;
+            $query = array("_id" => $commentR['userid']);
+            $commentU = $commenter->find($query);
+            foreach ($commentU as $commU) {
+            echo "    <div class='col-md-11 offset-md-1 pb-4'>
                         <h3>
                           <img src='https://bootdey.com/img/Content/avatar/avatar6.png' class='rounded-circle' style='height: 30px; width: 30px'>
-                          <small>Jamie Sulit</small>
+                          <small>".$commU['lastName']." ".$commU['firstName']."</small>
                         </h3>
-                        <p class='card-text'>Nam porttitor sem tortor, vel tincidunt turpis efficitur vitae. Nunc elementum, sem at bibendum elementum, diam arcu molestie nisl, nec tincidunt ipsum nulla in massa. Nullam egestas rutrum molestie.</p>
-                      </div>
-                    </div>
+                        <p class='card-text'>".$commentR['content']."</p>
+                      </div>";
+                      }
+                      }
+            echo "  </div>
                   </div>
-                  -->
 
                   <!-- Others -->
-                  <div class='card-footer text-right'>
-                    <button type='submit' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
-                    <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
+                  <div class='card-footer pt-0'>
+                    <form action='userLog/controller/commentProccess.php' method='POST'>
+                      <textarea name='commentContent'></textarea>
+                      <input name='postId' type='hidden' value='".$res['_id']."' ?>
+                      <div class='text-right'>
+                        <button type='' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
+                        <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -213,9 +226,12 @@ foreach($query as $dbQuery)
               </div>
 
               <!-- Others -->
-              <div class="card-footer text-right">
-                <button type="submit" class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Like</button>
-                <button type="submit" class="btn btn-primary"><i class="fas fa-comment"></i> Comment</button>
+              <div class="card-footer text-right pt-0">
+                <form action="userLog/controller/commentProcess.php" method="POST">
+                  <textarea name="commentContent"></textarea>
+                  <button type="" class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Like</button>
+                  <button type="submit" class="btn btn-primary"><i class="fas fa-comment"></i> Comment</button>
+                </form>
               </div>
             </div>
           </div>
