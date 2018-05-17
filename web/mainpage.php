@@ -192,10 +192,15 @@ foreach($query as $dbQuery)
 
                   <!-- Others -->
 
-                  <div class='card-footer text-right'>
-                    <button type='submit' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
-                    <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
-                    <button type='submit' class='btn btn-danger'><i class='fa fa-trash'></i></button>
+                  <div class='card-footer pt-0'>
+                    <form action='userLog/controller/commentProccess.php' method='POST'>
+                      <textarea name='commentContent'></textarea>
+                      <input name='postId' type='hidden' value='".$res['_id']."' ?>
+                      <div class='text-right'>
+                        <button type='' class='btn btn-primary'><i class='fas fa-thumbs-up'></i> Like</button>
+                        <button type='submit' class='btn btn-primary'><i class='fas fa-comment'></i> Comment</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
