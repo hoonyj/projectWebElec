@@ -13,12 +13,7 @@ $id=$_SESSION['_id'];
 $query = $db->users->find(array("_id" => $id));
 foreach($query as $dbQuery)
 
-// echo '<pre>';
-  //
-  // foreach ( $query as $current )
-  //     print_r($current);
-  //
-// echo '</pre>';
+
 ?>
 
 <head>
@@ -51,7 +46,7 @@ foreach($query as $dbQuery)
       </button>
 
       <input id='s' type='search'>
-      
+
       <div class="collapse navbar-collapse" id="responsiveNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -88,10 +83,30 @@ foreach($query as $dbQuery)
           </div>
 
           <div class="card shadow mb-4">
-            <h4 class="card-title pt-4 text-center">Reccomended Users</h4>
+            <h4 class="card-title pt-4 text-center">Recomended Users</h4>
             <div class="row text-center">
               <div class="col">
-                <h4>
+                <?php
+
+
+                  $findUser =  $db->users->find(array(), array("lastName" => 1, "firstName" => 1));
+                foreach ($findUser as $finding){
+                  echo "<h4>
+                  <img src='https://bootdey.com/img/Content/avatar/avatar6.png' class='card-img-top rounded-circle ml-auto mr-auto' style='height: 30px; width: 30px'>
+                  ".$finding['lastName']." ".$finding['firstName']."
+                  <button class='follow btn btn-outline-primary'>
+                    <span class='msg-follow'> <i class='fas fa-plus'></i> Follow</span>
+                    <span class='msg-following'>Following</span>
+                    <span class='msg-unfollow'><i class='fas fa-minus'></i> Unfollow</span>
+                  </button>
+                  ";
+                }
+
+                ?>
+
+
+
+                <!-- <h4>
                   <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="card-img-top rounded-circle ml-auto mr-auto" style="height: 30px; width: 30px">
                   <small>James Tarrobal</small>
                   <button class="follow btn btn-outline-primary">
@@ -126,7 +141,7 @@ foreach($query as $dbQuery)
                     <span class="msg-following">Following</span>
                     <span class="msg-unfollow"><i class="fas fa-minus"></i> Unfollow</span>
                   </button>
-                </h4>
+                </h4> -->
               </div>
             </div>
           </div>
